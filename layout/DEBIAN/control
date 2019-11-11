@@ -1,0 +1,9 @@
+Package: com.rockqj.networkfixer
+Name: networkfixer
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Enable network access of cydia and checkra1n
+Maintainer: rockqj
+Author: rockqj
+Section: System
+Tag: role::hacker
