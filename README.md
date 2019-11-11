@@ -8,6 +8,7 @@ The tool will enable network access for checkra1n and cydia in iOS 13.
 
 * The idea came from @laoyur. The detail can be found at: https://github.com/pwn20wndstuff/Undecimus/issues/136
 
+* In iOS 13, the related APIs were moved from `Preferences.framework` to `SettingsCellular.framework`.
 
 ## Supported (Verified)
 
