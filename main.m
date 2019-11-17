@@ -2,10 +2,15 @@
 #include <objc/message.h>
 
 int main(int argc, char *argv[], char *envp[]) {
+	// iOS 13
 	NSBundle *bundle = [NSBundle bundleWithPath:@"/System/Library/PrivateFrameworks/SettingsCellular.framework"];
 	if (![bundle load]) {
-		printf("Load framework failed.\n");
-		return -1;
+		// iOS 12
+		bundle = [NSBundle bundleWithPath:@"/System/Library/PrivateFrameworks/Preferences.framework"];
+		if (![bundle load]) {
+			printf("Load framework failed.\n");
+			return -1;
+		}
 	}
 
 	Class PSAppDataUsagePolicyCacheClass = NSClassFromString(@"PSAppDataUsagePolicyCache");
